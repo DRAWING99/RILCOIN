@@ -1,0 +1,17 @@
+{
+  "name": "rilcoin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SMARTKEY AI - عمله ربط بلوكشين متطوره",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.3.4"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
