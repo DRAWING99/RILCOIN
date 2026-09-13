@@ -14,7 +14,11 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // Inject Vercel Speed Insights
     if (typeof window !== 'undefined') {
-      injectSpeedInsights()
+      try {
+        injectSpeedInsights()
+      } catch (error) {
+        console.warn('Speed Insights failed to load:', error)
+      }
     }
   }
 } satisfies Theme
